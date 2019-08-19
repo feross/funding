@@ -1,0 +1,44 @@
+{
+  "name": "funding",
+  "description": "Get open source maintainers paid",
+  "version": "0.0.0",
+  "author": {
+    "name": "Feross Aboukhadijeh",
+    "email": "feross@feross.org",
+    "url": "https://feross.org"
+  },
+  "bin": {
+    "funding": "bin/funding.js"
+  },
+  "bugs": {
+    "url": "https://github.com/feross/funding/issues"
+  },
+  "dependencies": {
+    "boxen": "^3.2.0",
+    "chalk": "^2.4.2",
+    "term-size": "^2.1.0",
+    "word-wrap": "^1.2.3"
+  },
+  "devDependencies": {
+    "standard": "*",
+    "tape": "^4.11.0"
+  },
+  "homepage": "https://github.com/feross/funding",
+  "keywords": [
+    "funding",
+    "maintainers",
+    "open source",
+    "get paid",
+    "sustainability"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feross/funding.git"
+  },
+  "scripts": {
+    "install": "node bin/funding.js",
+    "test": "standard && tape test/*.js && node bin/funding.js"
+  }
+}
