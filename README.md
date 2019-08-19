@@ -42,11 +42,13 @@ I wrote and maintain several popular browserify + webpack ecosystem packages lik
 
 In the past, I was on the Node.js Board of Directors, representing individual Node.js users like you! It was an unpaid position, but I was happy to play some small part in making things better for everyone. Just for fun, a couple years ago I helped organize [ArcticJS](https://arcticjs.club/2017/), an impromptu JavaScript conference in Svalbard, the northern-most human settlement on Earth, with some amazing friends.
 
+## What is the long-term goal?
+
+My goal with this experiment is to make StandardJS healthier. If we learn that the experiment works, perhaps we can help make all open source healthier, too. For complex reasons, companies are generally hesitant or unwilling to fund open source directly. When it does happen, it's never enough and it never reaches packages which are transitive dependencies (i.e. packages that no one installs explicitly and therefore no one knows exists). Essentially, we have a public good which is consumed by huge numbers of users, but which almost no one pays for. Fortunately, there exists a funding model that usually works for public goods like this – ads. The goal of this experiment is to answer the question: Can we use ethical ads – ads that don't track users or collect data – to fund open source software?
+
 ## What will the funds be used for?
 
-The funds raised so far ($2,000) have paid for Feross's time to [release Standard 14](https://standardjs.com/changelog.html#1400---2019-08-19) which has taken around five full days.
-
-If we are able to raise additional funds, the next thing we'd like to fund is development towards out-of-the-box TypeScript support in StandardJS (one of the most common feature requests!) as well as modernizing the various text editor plugins (many of which are currently unmaintained).
+The funds raised so far ($2,000) have paid for Feross's time to [release Standard 14](https://standardjs.com/changelog.html#1400---2019-08-19) which has taken around five days. If we are able to raise additional funds, the next thing we'd like to focus on is out-of-the-box TypeScript support in StandardJS (one of the most common feature requests!) and modernizing the various text editor plugins (many of which are currently unmaintained).
 
 ## Where can I provide feedback about this experiment?
 
