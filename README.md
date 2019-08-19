@@ -2,7 +2,7 @@
 
 ### Get open source maintainers paid
 
-This is an open source funding experiment! ✨ The current model of sustaining open source is not working. We desparately need more experimentation. This is one such experiment.
+This is an open source funding experiment! ✨ The current model of sustaining open source is not working. We desperately need more experimentation. This is one such experiment.
 
 ## Usage
 
@@ -34,13 +34,13 @@ Hey there, I'm Feross!
 
 <img src="https://feross.org/images/feross-cat.jpg" width=400 />
 
-I'm an open source author, maintainer, and mad scientist. I maintain **[100+ packages on npm](https://www.npmjs.com/~feross)** which are downloaded 100+ million times per month 🤯It's quite mind-blowing, tbh! All my code is [freely accessible on GitHub](https://github.com/feross).
+I'm an open source author, maintainer, and mad scientist. I maintain **[100+ packages on npm](https://www.npmjs.com/~feross)** which are downloaded 100+ million times per month. 🤯 It's quite mind-blowing, tbh! All my code is [freely accessible on GitHub](https://github.com/feross).
 
 I work on innovative projects like [WebTorrent](https://github.com/webtorrent/webtorrent), a streaming torrent client for the web, [WebTorrent Desktop](https://github.com/webtorrent/webtorrent-desktop), a slick torrent app for Mac/Windows/Linux, and [StandardJS](https://github.com/standard/standard), a JavaScript style guide, linter, and automatic code fixer. I also work on fun projects like [BitMidi](https://bitmidi.com), a free MIDI database, and [Play](https://play.cash), a music video app.
 
 I wrote and maintain several popular browserify + webpack ecosystem packages like [buffer](https://github.com/feross/buffer) (38M downloads/month) and [safe-buffer](https://github.com/feross/safe-buffer) (64M downloads/month). Some of my favorite npm packages that I've written are [simple-get](https://github.com/feross/simple-get) (4M downloads/month), [run-parallel](https://github.com/feross/run-parallel) (1.6M downloads/month), and [simple-peer](https://github.com/feross/simple-peer) (32K downloads/month).
 
-In the past, I was on the Node.js Board of Directors, representing individual Node.js users like you! It was an unpaid position, but I was happy to play some small part in making things better for everyone. Just for fun, a couple years ago I helped organize [ArcticJS](https://arcticjs.club/2017/), an impromptu JavaScript conference in Svalbard, the nothern-most human settlement on Earth, with some amazing friends.
+In the past, I was on the Node.js Board of Directors, representing individual Node.js users like you! It was an unpaid position, but I was happy to play some small part in making things better for everyone. Just for fun, a couple years ago I helped organize [ArcticJS](https://arcticjs.club/2017/), an impromptu JavaScript conference in Svalbard, the northern-most human settlement on Earth, with some amazing friends.
 
 ## What will the funds be used for?
 
