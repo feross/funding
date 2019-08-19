@@ -1,7 +1,7 @@
 {
   "name": "funding",
   "description": "Get open source maintainers paid",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": {
     "name": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
