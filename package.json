@@ -28,7 +28,6 @@
     "funding",
     "maintainers",
     "open source",
-    "get paid",
     "sustainability"
   ],
   "license": "MIT",
@@ -39,6 +38,7 @@
   },
   "scripts": {
     "install": "node bin/funding.js",
+    "start": "node bin/funding.js",
     "test": "standard && tape test/*.js && node bin/funding.js"
   }
 }

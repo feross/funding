@@ -26,6 +26,7 @@ function formatText (text) {
 }
 
 function formatUrl (url) {
+  url = wrap(url, { cut: true })
   return chalk.blue.underline(url)
 }
 
