@@ -19,8 +19,8 @@ This is an open source funding experiment! The current model of sustaining open 
 npm install funding
 ```
 
-Maintainers: [Apply to join the experiment](https://forms.gle/4agtnXJLS9E6qLaX9)
-Companies: [Post a terminal ad](https://forms.gle/hoJ9fJhP86kSGcvT6)
+- Maintainers: [Apply to join the experiment](https://forms.gle/4agtnXJLS9E6qLaX9)
+- Companies: [Post a terminal ad](https://forms.gle/hoJ9fJhP86kSGcvT6)
 
 ## See it action
 
