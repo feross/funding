@@ -1,6 +1,6 @@
-# funding
+# funding [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
-### Let's get open source maintainers paid [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
+### Let's get open source maintainers paid ✨
 
 [travis-image]: https://img.shields.io/travis/feross/funding/master.svg
 [travis-url]: https://travis-ci.org/feross/funding
