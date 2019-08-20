@@ -1,5 +1,7 @@
 # funding
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/feross/funding.svg)](https://greenkeeper.io/)
+
 ### Get open source maintainers paid
 
 This is an open source funding experiment! ✨ The current model of sustaining open source is not working. We desperately need more experimentation. This is one such experiment.
