@@ -9,20 +9,31 @@ const messages = require('./messages.json')
 
 function formatTitle (title) {
   title = wrap(title)
-  if (detect.isITerm() || detect.isHyper()) {
-    return chalk.black(title)
+
+  if (!detect.isTravis()) {
+    title = chalk.black(title)
   }
-  return chalk.black.bold(title)
+
+  if (!detect.isITerm() && !detect.isHyper()) {
+    title = chalk.bold(title)
+  }
+
+  return title
 }
 
 function formatText (text) {
   text = wrap(text)
-  return chalk.black(
-    text.replace(
-      /{{([^}]*?)}}/g,
-      (match, url) => chalk.blue.underline(url)
-    )
+
+  text = text.replace(
+    /{{([^}]*?)}}/g,
+    (match, url) => chalk.blue.underline(url)
   )
+
+  if (!detect.isTravis()) {
+    text = chalk.black(text)
+  }
+
+  return text
 }
 
 function formatUrl (url) {
@@ -37,24 +48,35 @@ function formatMessage (message) {
     '\n\n' + formatUrl(url)
 
   const opts = {
-    borderStyle: {
-      topLeft: ' ',
-      topRight: ' ',
-      bottomLeft: ' ',
-      bottomRight: ' ',
-      horizontal: ' ',
-      vertical: ' '
-    },
-    backgroundColor: 'white',
+    align: 'center',
+    float: 'center',
     padding: {
       top: 1,
       right: 4,
       bottom: 1,
       left: 4
-    },
-    margin: 0,
-    float: 'center',
-    align: 'center'
+    }
+  }
+
+  if (detect.isTravis()) {
+    Object.assign(opts, {
+      borderColor: 'green',
+      borderStyle: 'bold',
+      margin: 1
+    })
+  } else {
+    Object.assign(opts, {
+      borderStyle: {
+        topLeft: ' ',
+        topRight: ' ',
+        bottomLeft: ' ',
+        bottomRight: ' ',
+        horizontal: ' ',
+        vertical: ' '
+      },
+      backgroundColor: 'white',
+      margin: 0
+    })
   }
 
   return boxen(coloredMessage, opts)
