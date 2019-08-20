@@ -13,10 +13,19 @@
 
 This is an open source funding experiment! The current model of sustaining open source is not working. We desperately need more experimentation. This is one such experiment.
 
-## Usage
+## Install
 
 ```bash
 npm install funding
+```
+
+Maintainers: [Apply to join the experiment](https://forms.gle/4agtnXJLS9E6qLaX9)
+Companies: [Post a terminal ad](https://forms.gle/hoJ9fJhP86kSGcvT6)
+
+## See it action
+
+```bash
+npx funding
 ```
 
 ## What is this?
