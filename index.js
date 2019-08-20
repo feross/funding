@@ -10,7 +10,7 @@ const messages = require('./messages.json')
 function formatTitle (title) {
   title = wrap(title)
 
-  if (!detect.isTravis()) {
+  if (!detect.isCI()) {
     title = chalk.black(title)
   }
 
@@ -29,7 +29,7 @@ function formatText (text) {
     (match, url) => chalk.blue.underline(url)
   )
 
-  if (!detect.isTravis()) {
+  if (!detect.isCI()) {
     text = chalk.black(text)
   }
 
@@ -49,7 +49,16 @@ function formatMessage (message) {
 
   const opts = {
     align: 'center',
+    borderStyle: {
+      topLeft: ' ',
+      topRight: ' ',
+      bottomLeft: ' ',
+      bottomRight: ' ',
+      horizontal: ' ',
+      vertical: ' '
+    },
     float: 'center',
+    margin: 0,
     padding: {
       top: 1,
       right: 4,
@@ -58,24 +67,9 @@ function formatMessage (message) {
     }
   }
 
-  if (detect.isTravis()) {
+  if (!detect.isCI()) {
     Object.assign(opts, {
-      borderColor: 'green',
-      borderStyle: 'bold',
-      margin: 1
-    })
-  } else {
-    Object.assign(opts, {
-      borderStyle: {
-        topLeft: ' ',
-        topRight: ' ',
-        bottomLeft: ' ',
-        bottomRight: ' ',
-        horizontal: ' ',
-        vertical: ' '
-      },
-      backgroundColor: 'white',
-      margin: 0
+      backgroundColor: 'white'
     })
   }
 
