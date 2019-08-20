@@ -46,8 +46,13 @@ function formatMessage (message) {
       vertical: ' '
     },
     backgroundColor: 'white',
-    padding: 2,
-    margin: 1,
+    padding: {
+      top: 1,
+      right: 4,
+      bottom: 1,
+      left: 4
+    },
+    margin: 0,
     float: 'center',
     align: 'center'
   }
@@ -76,7 +81,7 @@ function printRandomMessage () {
 
   checkMessage(message)
   const formattedMessage = formatMessage(message)
-  console.log(formattedMessage)
+  console.log(formattedMessage + '\n')
 }
 
 module.exports = {
