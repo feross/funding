@@ -11,7 +11,7 @@
 [standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [standard-url]: https://standardjs.com
 
-This is an open source funding experiment! ✨ The current model of sustaining open source is not working. We desperately need more experimentation. This is one such experiment.
+This is an open source funding experiment! The current model of sustaining open source is not working. We desperately need more experimentation. This is one such experiment.
 
 ## Usage
 
