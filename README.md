@@ -1,8 +1,15 @@
 # funding
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/feross/funding.svg)](https://greenkeeper.io/)
+### Let's get open source maintainers paid [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
-### Get open source maintainers paid
+[travis-image]: https://img.shields.io/travis/feross/funding/master.svg
+[travis-url]: https://travis-ci.org/feross/funding
+[npm-image]: https://img.shields.io/npm/v/funding.svg
+[npm-url]: https://npmjs.org/package/funding
+[downloads-image]: https://img.shields.io/npm/dm/funding.svg
+[downloads-url]: https://npmjs.org/package/funding
+[standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[standard-url]: https://standardjs.com
 
 This is an open source funding experiment! ✨ The current model of sustaining open source is not working. We desperately need more experimentation. This is one such experiment.
 
@@ -36,7 +43,7 @@ Hey there, I'm Feross!
 
 <img src="https://feross.org/images/feross-cat.jpg" width=400 />
 
-I'm an open source author, maintainer, and mad scientist. I maintain **[100+ packages on npm](https://www.npmjs.com/~feross)** which are downloaded 100+ million times per month. 🤯 It's quite mind-blowing, tbh! All my code is [freely accessible on GitHub](https://github.com/feross).
+I'm an open source author, maintainer, and mad scientist. I maintain [100+ packages on npm](https://www.npmjs.com/~feross) which are downloaded 100+ million times per month. All my code is [freely accessible on GitHub](https://github.com/feross).
 
 I work on innovative projects like [WebTorrent](https://github.com/webtorrent/webtorrent), a streaming torrent client for the web, [WebTorrent Desktop](https://github.com/webtorrent/webtorrent-desktop), a slick torrent app for Mac/Windows/Linux, and [StandardJS](https://github.com/standard/standard), a JavaScript style guide, linter, and automatic code fixer. I also work on fun projects like [BitMidi](https://bitmidi.com), a free MIDI database, and [Play](https://play.cash), a music video app.
 
