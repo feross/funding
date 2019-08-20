@@ -38,7 +38,7 @@ The goal is to make sure that packages are well-maintained now and for the fores
 
 ## What does this code do?
 
-You can take a look! All the code is open source in this GitHub repository. Essentially, it calls `console.log()` on some text. There is no tracking, data collecting, or unexpected behavior. You can look at the code to verify – indeed, this is the beauty of open source!
+You can take a look! All the code is open source in this GitHub repository. Essentially, it calls `console.log()` on some text. **There is no tracking or data collecting — and it will always stay this way.** You can look at the code to verify – indeed, this is the beauty of open source!
 
 ## Where is this experiment running?
 
