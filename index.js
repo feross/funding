@@ -15,11 +15,11 @@ const wrap = require('./lib/wrap')
 function formatTitle (title) {
   title = wrap(title)
 
-  if (!isCI) {
+  if (!isCI()) {
     title = chalk.black(title)
   }
 
-  if (!isITerm && !isHyper) {
+  if (!isHyper() && !isITerm()) {
     title = chalk.bold(title)
   }
 
@@ -34,7 +34,7 @@ function formatText (text) {
     (match, url) => chalk.blue.underline(url)
   )
 
-  if (!isCI) {
+  if (!isCI()) {
     text = chalk.black(text)
   }
 
@@ -87,7 +87,7 @@ function formatMessage (message) {
     }
   }
 
-  if (!isCI) {
+  if (!isCI()) {
     Object.assign(opts, {
       backgroundColor: 'white'
     })
@@ -97,7 +97,7 @@ function formatMessage (message) {
 }
 
 function printRandomMessage () {
-  if (isSilentMode) return
+  if (isSilentMode()) return
 
   const i = Math.floor(Math.random() * messages.length)
   const message = messages[i]
