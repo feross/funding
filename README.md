@@ -71,3 +71,11 @@ The funds raised so far ($2,000) have paid for Feross's time to [release Standar
 ## Where can I provide feedback about this experiment?
 
 You can open an issue. But please be kind. I'm a human with feelings. ❤️
+
+## How can I disable this?
+
+Just to be super clear: **This package does no tracking or data collecting — and it will always stay this way.** It's just a fancy `console.log()`.
+
+If you support open source through direct contributions, donations, or however else you see fit, you can permanently silence `funding` by adding an environment variable `OPEN_SOURCE_SUPPORTER=true` to your terminal environment.
+
+Note, `funding` also respects npm's `loglevel` setting, so e.g. `npm install --silent` and `npm install --quiet` will be respected.
