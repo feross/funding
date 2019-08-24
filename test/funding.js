@@ -95,6 +95,7 @@ test('deduplication / rate-limiting', t => {
       t.equal(stdout, '', 'no stdout ouput')
       t.equal(stderr, '', 'no stderr output')
     })
+  })
 })
 
 test('OPEN_SOURCE_SUPPORTER=true prevents output', t => {
