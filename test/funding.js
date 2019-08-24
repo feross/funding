@@ -65,3 +65,20 @@ test('`npm --loglevel error` prevents output', t => {
     t.equal(stderr.length, 0, 'no stderr output')
   })
 })
+
+test('OPEN_SOURCE_SUPPORTER=true prevents output', t => {
+  t.plan(3)
+
+  const opts = {
+    env: {
+      ...process.env,
+      OPEN_SOURCE_SUPPORTER: 'true'
+    }
+  }
+
+  cp.execFile(FUNDING_BIN_PATH, [], opts, (err, stdout, stderr) => {
+    t.error(err)
+    t.equal(stdout.length, 0, 'no stdout ouput')
+    t.equal(stderr.length, 0, 'no stderr output')
+  })
+})
