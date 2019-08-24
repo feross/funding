@@ -1,20 +1,24 @@
 const boxen = require('boxen')
 const chalk = require('chalk')
 
-const detect = require('./lib/detect')
-const wrap = require('./lib/wrap')
-const check = require('./lib/check')
+const {
+  isHyper,
+  isITerm,
+  isCI,
+} = require('./lib/detect')
 
+const check = require('./lib/check')
 const messages = require('./messages.json')
+const wrap = require('./lib/wrap')
 
 function formatTitle (title) {
   title = wrap(title)
 
-  if (!detect.isCI()) {
+  if (!isCI) {
     title = chalk.black(title)
   }
 
-  if (!detect.isITerm() && !detect.isHyper()) {
+  if (!isITerm && !isHyper) {
     title = chalk.bold(title)
   }
 
@@ -29,7 +33,7 @@ function formatText (text) {
     (match, url) => chalk.blue.underline(url)
   )
 
-  if (!detect.isCI()) {
+  if (!isCI) {
     text = chalk.black(text)
   }
 
@@ -82,7 +86,7 @@ function formatMessage (message) {
     }
   }
 
-  if (!detect.isCI()) {
+  if (!isCI) {
     Object.assign(opts, {
       backgroundColor: 'white'
     })
