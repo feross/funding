@@ -32,6 +32,11 @@ test('`npm --silent` or `npm --loglevel silent` prevents output', t => {
 })
 
 test('`npm --quiet` or `npm --loglevel warn` prevents output', t => {
+  if (process.version.startsWith('v6.')) {
+    t.pass('Ignore `--loglevel warn` on Node 6 (it is the default)')
+    return t.end()
+  }
+
   t.plan(3)
 
   const opts = {
