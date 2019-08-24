@@ -5,6 +5,7 @@ const {
   isHyper,
   isITerm,
   isCI,
+  isSilentMode
 } = require('./lib/detect')
 
 const check = require('./lib/check')
@@ -96,6 +97,8 @@ function formatMessage (message) {
 }
 
 function printRandomMessage () {
+  if (isSilentMode) return
+
   const i = Math.floor(Math.random() * messages.length)
   const message = messages[i]
 
