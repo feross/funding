@@ -41,6 +41,21 @@ function formatUrl (url) {
   return chalk.blue.underline(url)
 }
 
+function checkMessage (message) {
+  const { title, text, url } = message
+
+  // Check if the strings are safe to print to the terminal. Specifically, the
+  // string should be plain ASCII, excluding control characters. This is
+  // paranoid and not strictly necessary since (1) we curate the messages.json
+  // file by hand and will never include non-ASCII text, and (2) we check the
+  // strings at package publish time (see test/messages.js). But it doesn't hurt
+  // to check again in the client and assert that messages are plain ASCII. This
+  // is the security principle of defense-in-depth.
+  check(title)
+  check(text)
+  check(url)
+}
+
 function formatMessage (message) {
   const { title, text, url } = message
 
@@ -76,21 +91,6 @@ function formatMessage (message) {
   return boxen(coloredMessage, opts)
 }
 
-function checkMessage (message) {
-  const { title, text, url } = message
-
-  // Check if the strings are safe to print to the terminal. Specifically, the
-  // string should be plain ASCII, excluding control characters. This is
-  // paranoid and not strictly necessary since (1) we curate the messages.json
-  // file by hand and will never include non-ASCII text, and (2) we check the
-  // strings at package publish time (see test/messages.js). But it doesn't hurt
-  // to check again in the client and assert that messages are plain ASCII. This
-  // is the security principle of defense-in-depth.
-  check(title)
-  check(text)
-  check(url)
-}
-
 function printRandomMessage () {
   const i = Math.floor(Math.random() * messages.length)
   const message = messages[i]
@@ -101,7 +101,7 @@ function printRandomMessage () {
 }
 
 module.exports = {
-  formatMessage,
   checkMessage,
+  formatMessage,
   printRandomMessage
 }
