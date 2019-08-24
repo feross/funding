@@ -1,6 +1,6 @@
 const test = require('tape')
-const check = require('../lib/check')
-const funding = require('../')
+
+const { checkString, checkMessage } = require('../lib/check')
 const messages = require('../messages.json')
 
 test('Messages is in the expected shape', t => {
@@ -17,26 +17,20 @@ test('Check all messages with check()', t => {
     t.equal(typeof message.url, 'string')
 
     t.doesNotThrow(() => {
-      check(message.title)
-    })
+      checkString(message.title)
+    }, 'checkString(message.title)')
 
     t.doesNotThrow(() => {
-      check(message.text)
-    })
+      checkString(message.text)
+    }, 'checkString(message.text)')
 
     t.doesNotThrow(() => {
-      check(message.url)
-    })
-  })
+      checkString(message.url)
+    }, 'checkString(message.url)')
 
-  t.end()
-})
-
-test('Check all messages with checkMessage()', t => {
-  messages.forEach(message => {
     t.doesNotThrow(() => {
-      funding.checkMessage(message)
-    })
+      checkMessage(message)
+    }, 'checkMessage(message)')
   })
 
   t.end()

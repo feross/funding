@@ -8,7 +8,9 @@ const {
   isSilentMode
 } = require('./lib/detect')
 
-const check = require('./lib/check')
+const { isShownRecently, markShown } = require('./lib/limit')
+
+const { checkMessage } = require('./lib/check')
 const messages = require('./messages.json')
 const wrap = require('./lib/wrap')
 
@@ -46,21 +48,6 @@ function formatUrl (url) {
   return chalk.blue.underline(url)
 }
 
-function checkMessage (message) {
-  const { title, text, url } = message
-
-  // Check if the strings are safe to print to the terminal. Specifically, the
-  // string should be plain ASCII, excluding control characters. This is
-  // paranoid and not strictly necessary since (1) we curate the messages.json
-  // file by hand and will never include non-ASCII text, and (2) we check the
-  // strings at package publish time (see test/messages.js). But it doesn't hurt
-  // to check again in the client and assert that messages are plain ASCII. This
-  // is the security principle of defense-in-depth.
-  check(title)
-  check(text)
-  check(url)
-}
-
 function formatMessage (message) {
   const { title, text, url } = message
 
@@ -96,19 +83,34 @@ function formatMessage (message) {
   return boxen(coloredMessage, opts)
 }
 
-function printRandomMessage () {
+function printMessage () {
+  // Do not print message when npm is run in silent mode
   if (isSilentMode()) return
 
+  // Do not print message when one has been shown recently
+  if (isShownRecently()) return
+
+  // Select a random message
   const i = Math.floor(Math.random() * messages.length)
   const message = messages[i]
 
+  // Check if the strings are safe to print to the terminal. Specifically, the
+  // string should be plain ASCII, excluding control characters. This is
+  // paranoid and not strictly necessary since (1) we curate the messages.json
+  // file by hand and will never include non-ASCII text, and (2) we check the
+  // strings at package publish time (see test/messages.js). But it doesn't hurt
+  // to check again in the client and assert that messages are plain ASCII. This
+  // is the security principle of defense-in-depth.
   checkMessage(message)
+
+  // Format the message and print it
   const formattedMessage = formatMessage(message)
   console.log(formattedMessage + '\n')
+
+  // Limit the frequency that messages are shown
+  markShown()
 }
 
 module.exports = {
-  checkMessage,
-  formatMessage,
-  printRandomMessage
+  printMessage
 }

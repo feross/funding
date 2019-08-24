@@ -40,6 +40,6 @@
   "scripts": {
     "postinstall": "node bin/funding.js",
     "start": "node bin/funding.js",
-    "test": "standard && node bin/funding.js && tape test/*.js"
+    "test": "standard && tape test/*.js"
   }
 }

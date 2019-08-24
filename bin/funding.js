@@ -15,7 +15,7 @@ try {
 
 try {
   if (funding) {
-    funding.printRandomMessage()
+    funding.printMessage()
   }
 } catch (err) {
   console.error(err.stack || err.message || err)
