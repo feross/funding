@@ -98,12 +98,12 @@ test('deduplication / rate-limiting', t => {
   })
 })
 
-test('OPEN_SOURCE_SUPPORTER=true prevents output', t => {
+test('OPEN_SOURCE_CONTRIBUTOR=true prevents output', t => {
   t.plan(3)
 
   const opts = {
     env: Object.assign({}, process.env, {
-      OPEN_SOURCE_SUPPORTER: 'true'
+      OPEN_SOURCE_CONTRIBUTOR: 'true'
     })
   }
 

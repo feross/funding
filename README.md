@@ -76,6 +76,6 @@ You can open an issue. But please be kind. I'm a human with feelings. ❤️
 
 Just to be super clear: **This package does no tracking or data collecting — and it will always stay this way.** It's just a fancy `console.log()`.
 
-If you support open source through direct contributions, donations, or however else you see fit, you can permanently silence `funding` by adding an environment variable `OPEN_SOURCE_SUPPORTER=true` to your terminal environment.
+If you support open source through direct contributions, donations, or however else you see fit, you can permanently silence `funding` by adding an environment variable `OPEN_SOURCE_CONTRIBUTOR=true` to your terminal environment.
 
 Note, `funding` also respects npm's `loglevel` setting, so e.g. `npm install --silent` and `npm install --quiet` will be respected.
