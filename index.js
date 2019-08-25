@@ -90,6 +90,9 @@ function printMessage () {
   // Do not print message when one has been shown recently
   if (isShownRecently()) return
 
+  // Skip running if no messages are available
+  if (messages.length === 0) return
+
   // Select a random message
   const i = Math.floor(Math.random() * messages.length)
   const message = messages[i]
