@@ -32,7 +32,7 @@ npx funding
 
 This is an open source funding experiment! ✨
 
-Whenever users install open source software, this package will display a message from a company that supports open source. Currently, these are [Linode](https://welcome.linode.com/standardjs) and [LogRocket](https://logrocket.com/term). The sponsorship pays directly for maintainer time. That is, writing new features, fixing bugs, answering user questions, and improving documentation.
+Whenever users install open source software, this package will display a message from a company that supports open source. The sponsorship pays directly for maintainer time. That is, writing new features, fixing bugs, answering user questions, and improving documentation.
 
 The goal is to make sure that packages are well-maintained now and for the foreseeable future, with regular releases, improved reliability, and timely security patches. Healthy open source packages benefit users and maintainers alike.
 
