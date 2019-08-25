@@ -39,7 +39,7 @@
   },
   "scripts": {
     "postinstall": "node bin/funding.js",
-    "start": "node bin/funding.js",
-    "test": "standard && tape test/*.js"
+    "start": "node tools/clear.js && node bin/funding.js",
+    "test": "standard && npm start && tape test/*.js"
   }
 }
