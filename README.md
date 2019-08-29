@@ -11,7 +11,7 @@
 [standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
 [standard-url]: https://standardjs.com
 
-### The experiment is currently paused – no sponsor messages are showing
+### UPDATE: The experiment is over – Feross posted [a recap](https://feross.org/funding-experiment-recap/) on his blog
 
 This is an open source funding experiment! The current model of sustaining open source is not working. We desperately need more experimentation. This is one such experiment.
 
@@ -21,14 +21,7 @@ This is an open source funding experiment! The current model of sustaining open 
 npm install funding
 ```
 
-- Maintainers: [Apply to join the experiment](https://forms.gle/4agtnXJLS9E6qLaX9)
-- Companies: [Post a terminal ad](https://forms.gle/hoJ9fJhP86kSGcvT6)
-
-## See it action
-
-```bash
-npx funding
-```
+### UPDATE: The experiment is over – Feross posted [a recap](https://feross.org/funding-experiment-recap/) on his blog
 
 ## What is this?
 
@@ -47,6 +40,8 @@ You can take a look! All the code is open source in this GitHub repository. Esse
 This experiment is currently running on a few open source projects that [Feross](https://github.com/feross) maintains:
 
 - [`standard`](https://standardjs.com)
+
+### UPDATE: The experiment is over – Feross posted [a recap](https://feross.org/funding-experiment-recap/) on his blog
 
 ## Who is Feross?
 
