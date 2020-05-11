@@ -21,7 +21,7 @@
     "word-wrap": "^1.2.3"
   },
   "devDependencies": {
-    "standard": "*",
+    "standard": ">=14.3.4",
     "tape": "^4.11.0"
   },
   "homepage": "https://github.com/feross/funding",
